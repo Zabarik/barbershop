@@ -133,12 +133,13 @@
 			<h2 class="login-popup-title">Личный кабинет</h2>
 			<p>Введите пожалуйста свой логин и пароль</p>
 			<form class="login-form" action="/echo" method="post">
-				<input type="text" name="login" value="" placeholder="Логин">
-				<input type="password" name="password" value="" placeholder="Пароль">
+				<input type="text" name="login" value="" placeholder="Логин" required>
+				<input type="password" name="password" value="" placeholder="Пароль" required>
 				<input type="checkbox" name="checkbox" id="checkbox-field" checked>
 				<label for="checkbox-field">Запомнить меня</label>
 				<a href="#">Я забыл пароль!</a>
 				<button class="btn" type="submit">Войти</button>
+				<a href="#" class="close"></a>
 			</form>
 		</div>
 	</body>
